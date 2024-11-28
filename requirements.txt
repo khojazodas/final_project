@@ -1,0 +1,4 @@
+DuckDk - 1.1.3
+Pandas - 2.2.3
+Plotly - 5.24.1
+Streamlit - 1.40.2
