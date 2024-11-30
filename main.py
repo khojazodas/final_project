@@ -119,5 +119,3 @@ fig3 = px.pie(
     title='Amount of Pizzas Sold by Size'
 )
 st.plotly_chart(fig3)
-
-st.write(""" ##### Project done by: \n ###### - [Khojazoda Sadriddin](https://github.com/khojazodas) \n ###### - [Murtazoev Alijon](https://github.com/Murtazoev) """)
