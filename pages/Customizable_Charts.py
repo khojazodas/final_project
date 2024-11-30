@@ -36,12 +36,9 @@ def load_data1():
     query = """
     select
         o.date as date
-        , pt.name as pizza_name
         , count(od.quantity) as quantity
         from order_details od
         join orders o on od.order_id = o.order_id
-        join pizzas p on od.pizza_id = p.pizza_id
-        join pizza_types pt on p.pizza_type_id = pt.pizza_type_id
         group by o.date
         order by o.date;
     """
@@ -91,7 +88,7 @@ date_filter_max = st.date_input(
     value=pd.to_datetime('2015-11-30')
 )
 filtered_date = inv1[
-    (inv1['date'] >= date_filter_min) & (inv1['date'] <= date_filter_max) & (inv1[pizza_name] == pizza_filter)
+    (inv1['date'] >= date_filter_min) & (inv1['date'] <= date_filter_max)
 ]
 
 #Линейный график - Amount of Sales per Date с наличием фильтра
