@@ -72,6 +72,7 @@ def load_data2():
     
 #Создание заголовка и загрузка кешированных данных
 st.write('# Main Page')
+st.write('### Pizza Place Sales-Продажы Пицерии')
 inv = load_data()
 inv1 = load_data1()
 inv2 = load_data2()
